@@ -2,127 +2,69 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
-    <!-- Icons -->
+    <title>Martin Personal Portfolio</title>
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
     />
-
-    <!-- Swiper css -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-
-    <!-- css -->
-    <link rel="stylesheet" href="./css/styles.css" />
-
-    <title>Kelvin</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-  
-    <!-- header -->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <!-- Title -->
-        <a href="#" class="navLogo">KELVIN</a>
-        <!-- Menu -->
-        <div class="navMenu" id="navMenu">
-          <ul class="navList grid">
-            <li class="navItem">
-              <a href="index.html" class="navLink activeLink">Home
-              </a>
-            </li>
+    <!-- Header Start -->
+    <header>
+      <div class="container">
+        <!-- Logo -->
+        <a href="#home" class="logo">PORTFOLIO</a>
 
-            <li class="navItem">
-              <a href="about.html" class="navLink">
-                About
-              </a>
-            </li>
-            <li class="navItem">
-              <a href="services.html" class="navLink">
-               Services
-              </a>
-            </li>
+        <!-- Toggle Button -->
+        <span class="toggle" onclick="toggleMenu()"></span>
 
-         
-              <li class="navItem">
-              <a href="projects.html" class="navLink">
-               Projects
-              </a>
-            </li> 
-
-            
-
-            <li class="navItem">
-              <a href="contact.html" class="navLink">
-                Contact Me
-              </a>
-            </li>
-          </ul>
-
-          <i class="uil uil-times navClose" id="navClose"></i>
-        </div>
-
-        <div class="navButtons">
-          
-
-          <div class="navToggle" id="navToggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
+        <!-- Nav Items -->
+        <nav class="menu" onclick="toggleMenu()">
+          <a href="index.html">Home</a>
+          <a href="about,html">About</a>
+          <a href="services.html">Services</a>
+          <a href="product.html">Products</a>
+          >
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
+    <!-- Header End -->
 
-    <!-- Main -->
-    <main class="main">
-      <!-- Home -->
-      <section class="home section" id="home">
-        <div class="homeContainer container grid">
-          <div class="homeContent grid">
-           
-
-            <div class="homeImg">
-              <svg
-                class="homeBlob"
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-          
-                  <image
-                    class="homeBlobImg"
-                    x="12"
-                    y="20"
-                    xlink:href="./images/about.jpg"
-                  />
-                </g>
-              </svg>
-            </div>
-
-            <div class="homeData">
-              <h1 class="homeTitle">Hi, I'm Kelvin;</h1>
-              <h3 class="homeSubtitle">Software Developer</h3>
-              <p class="homeDescription">
-                I have eperience in web development, app development and other tech related skills
-                and knownledge in programming.
-              </p>
-              <a href="#contact" class="button buttonFlex">
-                Contact Me <i class="uil uil-message buttonIcon"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="homeScroll">
-            <a href="#about" class="homeScrollButton buttonFlex">
-              <i class="uil uil-mouse-alt homeScrollMouse"></i>
-              <span class="homeScrollName">Scroll down</span>
-              <i class="uil uil-arrow-down homeScrollArrow"></i>
-            </a>
-          </div>
+    <!-- Banner Start -->
+    <section class="banner" id="home">
+      <div class="container">
+        <div class="textBx">
+          <h2>
+            Hello, I'm
+            <br />
+            <span>Martin</span>.</span>
+          </h2>
+          <h3>I'm a Front End Web Developer, from <marquee>Kibabii University.</marquee></h3>
+          <a href="#about" class="btn">About Me</a>
         </div>
-      </section>
-
-     
-      
+      </div>
+    </section>
  
+
+    <
+  
+  
+  
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="copyright">
+          <p>Copyright &copy; <span id="currentYear">2020</span> Martin. All Right Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

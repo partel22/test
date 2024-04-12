@@ -2,176 +2,98 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
-    <!-- Icons -->
+    <title>contact page</title>
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
     />
-
-    <!-- Swiper css -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-
-    <!-- css -->
-    <link rel="stylesheet" href="./css/styles.css" />
-
-    <title>contacts</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-  
-    <!-- header -->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <!-- Title -->
-        <a href="#" class="navLogo">KELVIN</a>
-        <!-- Menu -->
-        <div class="navMenu" id="navMenu">
-          <ul class="navList grid">
-            <li class="navItem">
-              <a href="index.html" class="navLink activeLink">Home
-              </a>
-            </li>
+    <!-- Header Start -->
+    <header>
+      <div class="container">
+        <!-- Logo -->
+        <a href="#home" class="logo">PORTFOLIO</a>
 
-            <li class="navItem">
-              <a href="about.html" class="navLink">
-                About
-              </a>
-            </li>
-            <li class="navItem">
-              <a href="services.html" class="navLink">
-               Services
-              </a>
-            </li>
+        <!-- Toggle Button -->
+        <span class="toggle" onclick="toggleMenu()"></span>
 
-         
-              <li class="navItem">
-              <a href="projects.html" class="navLink">
-               Projects
-              </a>
-            </li> 
-
-            
-
-            <li class="navItem">
-              <a href="contact.html" class="navLink">
-                Contact Me
-              </a>
-            </li>
-          </ul>
-
-          <i class="uil uil-times navClose" id="navClose"></i>
-        </div>
-
-        <div class="navButtons">
-          
-
-          <div class="navToggle" id="navToggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
+        <!-- Nav Items -->
+        <nav class="menu" onclick="toggleMenu()">
+          <a href="inde.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="products.html">Products</a>
+          >
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
-
- <!-- Contact -->
-      <section class="contact section" id="contact">
-        <h2 class="sectionTitle">Contact Me</h2>
-        <span class="sectionSubtitle">Get in touch</span>
-
-        <div class="contactContainer container grid">
-          <div class="indideContactContainer">
-            <div class="contactInformation">
-              <i class="uil uil-phone contactIcon"></i>
-
-              <div>
-                <h3 class="contactTitle">Call Me</h3>
-                <span class="contactSubtitle">+254713116883</span>
-              </div>
-            </div>
-
-            <div class="contactInformation">
-              <i class="uil uil-envelope contactIcon"></i>
-
-              <div>
-                <h3 class="contactTitle">Email</h3>
-                <span class="contactSubtitle">kelvin008@gmail.com</span>
-              </div>
-            </div>
-
-            <div class="contactInformation">
-              <i class="uil uil-map-marker contactIcon"></i>
-
-              <div>
-                <h3 class="contactTitle">Location</h3>
-                <span class="contactSubtitle">Kibabii, Bungoma</span>
-              </div>
-            </div>
-          </div>
+    <!-- Contact Start -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="heading">
+          <h2>Contact</h2>
+          <p>Feel free to contact me</p>
         </div>
-      </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footerBackground">
-        <div class="footerContainer container grid">
-          <div>
-            <h1 class="footerTitle">Kelvin</h1>
-            <span class="footerSubtitle">Software Developer</span>
+        <div class="content grid-container">
+          <div class="contactInfo">
+            <h3>Contact Info</h3>
+            <div class="contactInfoBx">
+              <div class="box">
+                <div class="icon">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <p>
+                    Bungoma,Kibabii University
+                    <br />
+                    Kenya,
+                    <br />
+                    50200
+                  </p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div class="text">
+                  <h3>Phone</h3>
+                  <p>0795684118</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div class="text">
+                  <h3>Email</h3>
+                  <p>martin2001@gmail.com</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <ul class="footerLinks">
-            <li>
-              <a href="#services" class="footerLink">Services</a>
-            </li>
-
-            <li>
-              <a href="#portfolio" class="footerLink">Portfolio</a>
-            </li>
-
-            <li>
-              <a href="#contact" class="footerLink">Contact</a>
-            </li>
-          </ul>
-
-          <div class="footerSocials">
-            <a
-              href=""
-              target="_blank"
-              class="footerSocial"
-            >
-              <i class="uil uil-facebook-f"></i>
-            </a>
-
-            <a
-              href=""
-              target="_blank"
-              class="footerSocial"
-            >
-              <i class="uil uil-instagram"></i>
-            </a>
-
-            <a
-              href="https://twitter.com/suryakalyan25"
-              target="_blank"
-              class="footerSocial"
-            >
-              <i class="uil uil-twitter-alt"></i>
-            </a>
+          <div class="formBx">
+            <form>
+              <h3>Message Me</h3>
+              <input type="text" placeholder="Full Name" />
+              <input type="email" placeholder="Email" />
+              <textarea placeholder="Your Message"></textarea>
+              <input type="submit" value="Send" class="btn" />
+            </form>
           </div>
         </div>
       </div>
-    </footer>
-
-    <!-- Scroll Top -->
-    <a href="#" class="scrollUp" id="scrollUp">
-      <i class="uil uil-arrow-up scrollUpIcon"></i>
-    </a>
-
-    <!-- Swiper js -->
-    <script src="./js/swiper-bundle.min.js"></script>
-    <!-- js -->
-    <script src="./js/main.js"></script>
+    </section>
+    <!-- Contact End -->
+     <script src="./js/main.js"></script>
   </body>
-</html>
+  </html>

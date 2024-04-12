@@ -2,125 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
-    <!-- Icons -->
+    <title>about page</title>
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
     />
-
-    <!-- Swiper css -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-
-    <!-- css -->
-    <link rel="stylesheet" href="./css/styles.css" />
-
-    <title>Kelvin</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-  
-    <!-- header -->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <!-- Title -->
-        <a href="#" class="navLogo">KELVIN</a>
-        <!-- Menu -->
-        <div class="navMenu" id="navMenu">
-          <ul class="navList grid">
-            <li class="navItem">
-              <a href="index.html" class="navLink activeLink">Home
-              </a>
-            </li>
+    <!-- Header Start -->
+    <header>
+      <div class="container">
+        <!-- Logo -->
+        <a href="#home" class="logo">PORTFOLIO</a>
 
-            <li class="navItem">
-              <a href="about.html" class="navLink">
-                About
-              </a>
-            </li>
-            <li class="navItem">
-              <a href="services.html" class="navLink">
-               Services
-              </a>
-            </li>
+        <!-- Toggle Button -->
+        <span class="toggle" onclick="toggleMenu()"></span>
 
-         
-              <li class="navItem">
-              <a href="projects.html" class="navLink">
-               Projects
-              </a>
-            </li> 
-
-            
-
-            <li class="navItem">
-              <a href="contact.html" class="navLink">
-                Contact Me
-              </a>
-            </li>
-          </ul>
-
-          <i class="uil uil-times navClose" id="navClose"></i>
-        </div>
-
-        <div class="navButtons">
+        <!-- Nav Items -->
+        <nav class="menu" onclick="toggleMenu()">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="products.html">Products</a>
           
-
-          <div class="navToggle" id="navToggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
- <!-- About -->
-      <section class="about section" id="about">
-        <h2 class="sectionTitle">About Me</h2>
-        <span class="sectionSubtitle">My Introduction</span>
+    !-- About Start -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="heading">
+          <h2>About Me</h2>
+        </div>
 
-        <div class="aboutContainer container grid">
-          <img src="./images/about.jpg" alt="Kelvin" class="aboutImg" />
+        <div class="content grid-container">
+          <div class="contentBx">
+            <h3>I'm a Front End Web Developer.</h3>
+            <p>
+              "I craft engaging websites with HTML, CSS, and JavaScript, ensuring seamless user experiences. Let's design your digital presence together, focusing on responsive layouts and intuitive interfaces. Your vision, my code—let's make it happen!"</p>
+          </div>
 
-          <div class="aboutData">
-            <p class="aboutDescription">
-              Experience in Web development, Software development and Mobile App
-              development and knowlwdge in programming skills and data
-              structures.
-            </p>
-
-            <div class="aboutInfo">
-              <div>
-                <span class="aboutInfoTitle">03+</span>
-                <span class="aboutInfoName"
-                  >Years <br />
-                  experience</span
-                >
-              </div>
-
-              <div>
-                <span class="aboutInfoTitle">07+</span>
-                <span class="aboutInfoName"
-                  >Completed <br />
-                  projects</span
-                >
-              </div>
-
-              <div>
-                <span class="aboutInfoTitle">01</span>
-                <span class="aboutInfoName"
-                  >Interns <br />
-                  Worked</span
-                >
-              </div>
-            </div>
-
-            <div class="aboutButtons">
-              <a download="" href="" class="button buttonFlex">
-                My CV<i class="uil uil-download-alt buttonIcon"></i>
-              </a>
-            </div>
+          <div>
+            <img src="./images/mart.jpeg" alt="Image" class="img" />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
+
+    <!-- About End -->
+     <script src="./js/main.js"></script>
 </body>
 </html>
